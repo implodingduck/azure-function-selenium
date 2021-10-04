@@ -41,7 +41,7 @@ namespace func
             chromeOptions.AddArgument("--no-sandbox");
             using (var driver = new ChromeDriver(chromeOptions))
             {
-                 var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
+                var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
                 var baseurl = Environment.GetEnvironmentVariable("BASE_URL");
                 //Navigate to base website
                 driver.Navigate().GoToUrl(baseurl);
